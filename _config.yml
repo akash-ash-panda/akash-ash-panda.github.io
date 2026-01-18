@@ -4,21 +4,27 @@ description: "Assistant Professor (Grade I), School of Basic Sciences, IIT Bhuba
 url: "https://akash-ash-panda.github.io"
 baseurl: ""
 
-# Theme (AcademicPages / Minimal Mistakes based)
+# Theme (GitHub Pages compatible)
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: default
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
 plugins:
   - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  
+
 # Author (used in sidebar)
 author:
-  name   : "Akash Ashirbad Panda"
-  avatar : "/images/profile.jpg"   # optional; upload later (see note below)
-  bio    : "Assistant Professor (Grade I), School of Basic Sciences (Mathematics), IIT Bhubaneswar."
+  name: "Akash Ashirbad Panda"
+  avatar: "/images/profile.jpg"
+  bio: "Assistant Professor (Grade I), School of Basic Sciences (Mathematics), IIT Bhubaneswar."
   location: "Bhubaneswar / Arugul, Odisha, India"
-  email  : "akashpanda@iitbbs.ac.in"
+  email: "akashpanda@iitbbs.ac.in"
   links:
     - label: "Email"
       icon: "fas fa-envelope"
@@ -30,16 +36,7 @@ author:
       icon: "fas fa-phone"
       url: "tel:+919961824068"
 
-# Build settings
-markdown: kramdown
-permalink: pretty
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-# Collections (AcademicPages commonly uses these)
+# Collections
 collections:
   teaching:
     output: true
@@ -51,7 +48,7 @@ collections:
     output: true
     permalink: /talks/:path/
 
-# Defaults (keeps pages clean)
+# Defaults
 defaults:
   - scope:
       path: ""
