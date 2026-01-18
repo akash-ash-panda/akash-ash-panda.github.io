@@ -5,9 +5,13 @@ url: "https://akash-ash-panda.github.io"
 baseurl: ""
 
 # Theme (AcademicPages / Minimal Mistakes based)
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: default
-
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+plugins:
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  
 # Author (used in sidebar)
 author:
   name   : "Akash Ashirbad Panda"
